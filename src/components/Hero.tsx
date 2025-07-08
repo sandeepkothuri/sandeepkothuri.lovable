@@ -133,10 +133,14 @@ const Hero = () => {
               <div className="relative w-96 h-96 mx-auto">
                 {/* Main profile container */}
                 <div className="w-full h-full rounded-3xl bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 flex items-center justify-center relative overflow-hidden backdrop-blur-sm border border-border/30 shadow-2xl">
-                  <div className="w-80 h-80 rounded-2xl bg-gradient-to-br from-muted/80 to-muted flex items-center justify-center text-9xl font-black text-primary relative">
-                    SK
+                  <div className="w-80 h-80 rounded-2xl overflow-hidden relative">
+                    <img 
+                      src="https://i.postimg.cc/C1qQvV8S/temp-Image-OBr7oa.avif"
+                      alt="Sandeep Kothuri"
+                      className="w-full h-full object-cover"
+                    />
                     {/* Overlay gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent rounded-2xl"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent"></div>
                   </div>
                   
                   {/* Floating decorative elements */}
