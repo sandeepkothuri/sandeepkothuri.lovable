@@ -10,11 +10,11 @@ const Projects = () => {
   const projects = [
     {
       title: 'Soluna Social',
-      description: 'Ethical AI content moderation system designed to create safer online communities through advanced machine learning algorithms.',
-      longDescription: 'Developed a comprehensive AI-powered content moderation platform that uses natural language processing and computer vision to detect harmful content while maintaining user privacy and ethical standards. The system includes real-time monitoring, customizable filters, and detailed analytics dashboards.',
-      tools: ['Python', 'TensorFlow', 'Django', 'PostgreSQL', 'React'],
+      description: 'Theoretical research paper proposing an ethical AI content moderation framework for creating safer online communities.',
+      longDescription: 'Authored a comprehensive research paper proposing a novel approach to ethical AI content moderation. The theoretical framework combines natural language processing and computer vision techniques while maintaining user privacy and ethical standards. The paper outlines methodologies for real-time monitoring, customizable filtering systems, and detailed analytics dashboards, providing a roadmap for future implementation of safer online community platforms.',
+      tools: ['Research', 'AI Ethics', 'NLP Theory', 'Computer Vision', 'Academic Writing'],
       image: '/placeholder-project1.jpg',
-      category: 'AI/ML'
+      category: 'Research'
     },
     {
       title: 'Medi Match',
@@ -43,7 +43,7 @@ const Projects = () => {
   ];
 
   const [selectedCategory, setSelectedCategory] = useState('All');
-  const categories = ['All', 'AI/ML', 'Healthcare', 'Data Analysis', 'UI/UX Design'];
+  const categories = ['All', 'Research', 'Healthcare', 'Data Analysis', 'UI/UX Design'];
 
   const filteredProjects = selectedCategory === 'All' 
     ? projects 
@@ -112,7 +112,9 @@ const Projects = () => {
                               {project.longDescription}
                             </p>
                             <div>
-                              <h4 className="font-semibold mb-2">Technologies Used:</h4>
+                              <h4 className="font-semibold mb-2">
+                                {project.category === 'Research' ? 'Research Areas:' : 'Technologies Used:'}
+                              </h4>
                               <div className="flex flex-wrap gap-2">
                                 {project.tools.map((tool) => (
                                   <Badge key={tool} variant="secondary">
@@ -124,10 +126,12 @@ const Projects = () => {
                           </div>
                         </DialogContent>
                       </Dialog>
-                      <Button size="sm" variant="outline">
-                        <Github className="h-4 w-4 mr-2" />
-                        Code
-                      </Button>
+                      {project.category !== 'Research' && (
+                        <Button size="sm" variant="outline">
+                          <Github className="h-4 w-4 mr-2" />
+                          Code
+                        </Button>
+                      )}
                     </div>
                   </div>
 
