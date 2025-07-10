@@ -55,6 +55,21 @@ All colors MUST be HSL.
   html {
     scroll-behavior: smooth;
   }
+
+  /* Override text cursor behavior */
+  h1, h2, h3, h4, h5, h6, p, span, div, section {
+    cursor: default;
+  }
+
+  /* Ensure interactive elements use pointer cursor */
+  button, a, [role="button"], .cursor-pointer {
+    cursor: pointer !important;
+  }
+
+  /* Specific overrides for clickable text elements */
+  button *, a *, [role="button"] * {
+    cursor: pointer !important;
+  }
 }
 
 @layer utilities {
