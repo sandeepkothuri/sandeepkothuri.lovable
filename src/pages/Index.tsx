@@ -11,7 +11,7 @@ import Contact from '@/components/Contact';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="dark min-h-screen bg-background text-foreground">
       <Navbar />
       <Hero />
       <About />
@@ -22,13 +22,13 @@ const Index = () => {
       <Contact />
       
       {/* Footer */}
-      <footer className="py-8 border-t border-primary/20">
+      <footer className="py-8 border-t border-border/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-foreground/60">
+            <p className="text-foreground/70 font-medium">
               © 2025 Sandeep Kothuri. All rights reserved.
             </p>
-            <p className="text-sm text-foreground/40 mt-2">
+            <p className="text-sm text-foreground/50 mt-2 font-light">
               Designed with passion for data and user experience.
             </p>
           </div>

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
@@ -10,33 +10,33 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 210 40% 96%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
 
     --radius: 0.5rem;
   }
@@ -79,14 +79,39 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground font-inter;
+    font-feature-settings: "cv01", "cv03", "cv04", "cv11";
   }
 
   html {
     scroll-behavior: smooth;
   }
 
+  /* Enhanced typography */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-semibold tracking-tight;
+    cursor: default;
+    line-height: 1.2;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  p {
+    @apply leading-relaxed;
+    cursor: default;
+  }
+
   /* Override text cursor behavior */
-  h1, h2, h3, h4, h5, h6, p, span, div, section {
+  span, div, section {
     cursor: default;
   }
 
@@ -99,15 +124,25 @@ All colors MUST be HSL.
   button *, a *, [role="button"] * {
     cursor: pointer !important;
   }
+
+  /* Enhanced focus styles for accessibility */
+  button:focus-visible, a:focus-visible, [role="button"]:focus-visible {
+    @apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none;
+  }
 }
 
 @layer utilities {
   .font-inter {
     font-family: 'Inter', sans-serif;
+    font-feature-settings: "cv01", "cv03", "cv04", "cv11";
   }
   
   .font-poppins {
     font-family: 'Poppins', sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
   }
   
   .animate-float {
@@ -134,16 +169,34 @@ All colors MUST be HSL.
   }
   
   .gradient-text {
-    background: linear-gradient(135deg, hsl(222.2 47.4% 11.2%) 0%, hsl(222.2 47.4% 21.2%) 100%);
+    background: linear-gradient(135deg, hsl(210 40% 98%) 0%, hsl(215 20.2% 65.1%) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
   .glass-effect {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  .professional-card {
+    @apply glass-effect rounded-xl border-border/30 hover:border-border/50 transition-all duration-300;
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .text-professional {
+    @apply text-foreground/90 font-medium;
+  }
+
+  .text-subtle {
+    @apply text-foreground/70 font-normal;
+  }
+
+  .text-muted {
+    @apply text-foreground/50 font-light;
   }
 }
 
@@ -185,20 +238,26 @@ All colors MUST be HSL.
   }
 }
 
-/* Custom scrollbar */
+/* Enhanced scrollbar for dark theme */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(214.3 31.8% 91.4%);
+  background: hsl(217.2 32.6% 17.5%);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(222.2 47.4% 11.2%);
+  background: hsl(215 20.2% 65.1%);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(222.2 47.4% 21.2%);
+  background: hsl(210 40% 98%);
+}
+
+/* Selection styling for dark theme */
+::selection {
+  background: hsl(210 40% 98% / 0.2);
+  color: hsl(210 40% 98%);
 }
