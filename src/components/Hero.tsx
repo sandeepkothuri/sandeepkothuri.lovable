@@ -184,7 +184,7 @@ const Hero = () => {
         <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
           <button
             onClick={scrollToAbout}
-            className="group flex flex-col items-center gap-2 animate-bounce hover:animate-none transition-all duration-300"
+            className="group flex flex-col items-center gap-2 animate-bounce-slow hover:animate-none transition-all duration-300"
           >
             <span className="text-xs text-foreground/60 font-medium uppercase tracking-wider">Scroll</span>
             <div className="p-2 rounded-full border-2 border-primary/30 group-hover:border-primary group-hover:bg-primary/10 transition-all duration-300">
