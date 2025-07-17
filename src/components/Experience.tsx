@@ -6,28 +6,36 @@ import { Card, CardContent } from '@/components/ui/card';
 const Experience = () => {
   const experiences = [
     {
-      title: 'Photography Volunteer',
-      organization: 'DIG Magazine, 22 West Media',
-      period: '2023 - Present',
-      description: 'Capturing compelling visual stories and contributing to digital media content creation.',
+      title: 'Digital Media Analyst',
+      organization: 'DIG Magazine, CSULB',
+      period: 'January 2025 - May 2025',
+      description: 'Analyzing digital media trends and creating data-driven content strategies.',
       icon: Camera,
       color: 'text-blue-400'
     },
     {
-      title: 'Vice-Chairperson',
-      organization: 'Photography Club, SRM University',
-      period: '2021 - 2023',
-      description: 'Led club activities, organized photography workshops, and mentored aspiring photographers.',
+      title: 'Design & Data Visualization Volunteer',
+      organization: '22 West Media, CSULB',
+      period: 'September 2023',
+      description: 'Creating impactful visual representations of data and enhancing design assets.',
       icon: Users,
       color: 'text-green-400'
     },
     {
-      title: 'Volunteer',
-      organization: 'University Photography Events',
-      period: '2020 - 2025',
-      description: 'Documented university events, graduations, and special occasions through professional photography.',
+      title: 'Technical Assistant',
+      organization: 'SRM University-AP',
+      period: 'October 2022',
+      description: 'Providing technical support and assistance for university projects and events.',
       icon: Calendar,
       color: 'text-purple-400'
+    },
+    {
+      title: 'Vice-Chairperson',
+      organization: 'Photography Club, SRM University-AP',
+      period: 'August 2020 - May 2022',
+      description: 'Led club activities, organized photography workshops, and mentored aspiring photographers.',
+      icon: Users,
+      color: 'text-amber-400'
     }
   ];
 
