@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Camera, Users, Calendar } from 'lucide-react';
+import { Camera, PenLine, Wrench, Users } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const Experience = () => {
@@ -18,7 +18,7 @@ const Experience = () => {
       organization: '22 West Media, CSULB',
       period: 'September 2023',
       description: 'Creating impactful visual representations of data and enhancing design assets.',
-      icon: Users,
+      icon: PenLine,
       color: 'text-green-400'
     },
     {
@@ -26,7 +26,7 @@ const Experience = () => {
       organization: 'SRM University-AP',
       period: 'October 2022',
       description: 'Providing technical support and assistance for university projects and events.',
-      icon: Calendar,
+      icon: Wrench,
       color: 'text-purple-400'
     },
     {
@@ -34,7 +34,7 @@ const Experience = () => {
       organization: 'Photography Club, SRM University-AP',
       period: 'August 2020 - May 2022',
       description: 'Led club activities, organized photography workshops, and mentored aspiring photographers.',
-      icon: Users,
+      icon: Camera,
       color: 'text-amber-400'
     }
   ];
