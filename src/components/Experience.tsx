@@ -92,21 +92,21 @@ const Experience = () => {
             ))}
           </div>
 
-          {/* Achievements */}
+          {/* Technical Achievements */}
           <div className="mt-16 text-center">
-            <h3 className="text-2xl font-bold mb-8">Key Achievements</h3>
+            <h3 className="text-2xl font-bold mb-8">Technical Achievements</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="glass-effect rounded-lg p-6 border-primary/20">
-                <div className="text-3xl font-bold text-primary mb-2">5+</div>
-                <p className="text-foreground/80">Years of Photography</p>
+                <div className="text-3xl font-bold text-primary mb-2">20+</div>
+                <p className="text-foreground/80">Data Dashboards Created</p>
               </div>
               <div className="glass-effect rounded-lg p-6 border-primary/20">
-                <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                <p className="text-foreground/80">Events Documented</p>
+                <div className="text-3xl font-bold text-primary mb-2">15+</div>
+                <p className="text-foreground/80">Technical Projects</p>
               </div>
               <div className="glass-effect rounded-lg p-6 border-primary/20">
-                <div className="text-3xl font-bold text-primary mb-2">100+</div>
-                <p className="text-foreground/80">Team Members Led</p>
+                <div className="text-3xl font-bold text-primary mb-2">3</div>
+                <p className="text-foreground/80">Data Analysis Tools</p>
               </div>
             </div>
           </div>
