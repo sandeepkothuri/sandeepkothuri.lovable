@@ -157,7 +157,7 @@ const Hero = () => {
             {/* Enhanced Stats Section */}
             <div className="grid grid-cols-2 gap-6 max-w-md mx-auto">
               {[
-                { number: "5+", label: "Years Experience", icon: "🎯" },
+                { number: "2+", label: "Years Experience", icon: "🎯" },
                 { number: "50+", label: "Projects Completed", icon: "🚀" },
                 { number: "3.6", label: "GPA Master's", icon: "🎓" },
                 { number: "100%", label: "Satisfaction Rate", icon: "⭐" }
