@@ -158,9 +158,9 @@ const Hero = () => {
             <div className="grid grid-cols-2 gap-6 max-w-md mx-auto">
               {[
                 { number: "2+", label: "Years Experience", icon: "🎯" },
-                { number: "50+", label: "Projects Completed", icon: "🚀" },
+                { number: "10+", label: "Dashboards Built", icon: "📊" },
                 { number: "3.6", label: "GPA Master's", icon: "🎓" },
-                { number: "100%", label: "Satisfaction Rate", icon: "⭐" }
+                { number: "4+", label: "Analytics Tools: Python, SQL, Tableau, Power BI", icon: "🛠️" }
               ].map((stat, index) => (
                 <div 
                   key={stat.label}
