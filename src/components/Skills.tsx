@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Code, Database, Palette, Award } from 'lucide-react';
+import { Code, Database, Cloud, Award } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
@@ -10,28 +10,33 @@ const Skills = () => {
       icon: Code,
       title: 'Languages & Tools',
       color: 'text-blue-400',
-      skills: ['Python', 'SQL', 'HTML5', 'CSS3', 'Django', 'Bootstrap']
+      skills: ['Python', 'SQL', 'Spark (Beginner)', 'R (Familiar)', 'Snowflake', 'dbt (Familiar)', 'MongoDB', 'JIRA', 'Excel', 'Salesforce']
     },
     {
       icon: Database,
       title: 'Data & Visualization',
       color: 'text-green-400',
-      skills: ['MySQL', 'Excel', 'Tableau', 'Power BI']
+      skills: ['Tableau', 'Power BI', 'Amazon QuickSight', 'MySQL']
     },
     {
-      icon: Palette,
-      title: 'Design',
+      icon: Cloud,
+      title: 'Cloud & Platforms',
       color: 'text-purple-400',
-      skills: ['Figma', 'UI/UX Design', 'Prototyping', 'User Research']
+      skills: ['AWS (S3, Athena, QuickSight)', 'Azure (Data Fundamentals)', 'Snowflake']
     }
   ];
 
   const certifications = [
-    'AWS Cloud Foundations',
-    'Excel Essentials',
-    'Microsoft Data Analysis & Generative AI',
-    'Python 3 (HackerRank)',
-    'IBM Design Thinking'
+    'Accenture North America – Forage Virtual Internship',
+    'Excel Essential Training (LinkedIn Learning)',
+    'AI Design Thinking (IBM)',
+    'Data Analysis with Microsoft Excel (Microsoft)',
+    'Generative AI Fundamentals (Microsoft)',
+    'AWS Cloud Practitioner Essentials (AWS)',
+    'Python (HackerRank)',
+    'Google Data Analytics Professional Certificate (Coursera)',
+    'IBM Data Engineer Professional Certificate (Coursera)',
+    'Azure Data Fundamentals (Microsoft)'
   ];
 
   return (

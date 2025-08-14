@@ -36,14 +36,14 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'ksandy.c16@gmail.com',
-      href: 'mailto:ksandy.c16@gmail.com',
+      value: 'sandy.k16.info@gmail.com',
+      href: 'mailto:sandy.k16.info@gmail.com',
       color: 'text-blue-400'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '(562) 391-7823',
+      value: '(562) 391 7823',
       href: 'tel:+15623917823',
       color: 'text-green-400'
     },

@@ -6,36 +6,20 @@ import { Card, CardContent } from '@/components/ui/card';
 const Experience = () => {
   const experiences = [
     {
-      title: 'Digital Media Analyst',
-      organization: 'DIG Magazine, CSULB',
-      period: 'January 2025 - May 2025',
-      description: 'Analyzing digital media trends and creating data-driven content strategies.',
-      icon: Camera,
+      title: 'Jr. Data Analyst (Intern/Contract)',
+      organization: 'Studytap – Remote',
+      period: 'Jul 2021 – Jun 2022',
+      description: 'Built Python scripts to clean ~200K usage logs into SQL tables; created initial Tableau dashboards; reduced analysis turnaround time by 50% and enabled self-service analytics.',
+      icon: Wrench,
       color: 'text-blue-400'
     },
     {
-      title: 'Design & Data Visualization Volunteer',
-      organization: '22 West Media, CSULB',
-      period: 'September 2023',
-      description: 'Creating impactful visual representations of data and enhancing design assets.',
-      icon: PenLine,
+      title: 'Frontend & Data Analyst',
+      organization: 'Studytap – Remote',
+      period: 'Jul 2022 – Jun 2023',
+      description: 'Automated insights for 500K+ product events; built Power BI/Tableau dashboards for activation, CAC, LTV; improved trial-to-subscription by 15% and reduced manual reporting by 40%.',
+      icon: Users,
       color: 'text-green-400'
-    },
-    {
-      title: 'Technical Assistant',
-      organization: 'SRM University-AP',
-      period: 'October 2022',
-      description: 'Providing technical support and assistance for university projects and events.',
-      icon: Wrench,
-      color: 'text-purple-400'
-    },
-    {
-      title: 'Vice-Chairperson',
-      organization: 'Photography Club, SRM University-AP',
-      period: 'August 2020 - May 2022',
-      description: 'Led club activities, organized photography workshops, and mentored aspiring photographers.',
-      icon: Camera,
-      color: 'text-amber-400'
     }
   ];
 

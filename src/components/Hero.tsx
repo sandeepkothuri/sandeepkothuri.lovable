@@ -81,7 +81,7 @@ const Hero = () => {
               <div className="flex items-center gap-4 p-4 rounded-xl bg-card/50 border border-border/50 backdrop-blur-sm">
                 <Mail className="h-5 w-5 text-primary" />
                 <div>
-                  <p className="text-sm font-medium text-foreground">ksandy.c16@gmail.com</p>
+                  <p className="text-sm font-medium text-foreground">sandy.k16.info@gmail.com</p>
                   <p className="text-xs text-foreground/60">Let's connect and collaborate</p>
                 </div>
               </div>
@@ -110,7 +110,7 @@ const Hero = () => {
             {/* Enhanced Social Links */}
             <div className="flex space-x-4">
               {[
-                { icon: Mail, href: "mailto:ksandy.c16@gmail.com", label: "Email" },
+                { icon: Mail, href: "mailto:sandy.k16.info@gmail.com", label: "Email" },
                 { icon: Linkedin, href: "#", label: "LinkedIn" },
                 { icon: Github, href: "#", label: "GitHub" }
               ].map(({ icon: Icon, href, label }) => (

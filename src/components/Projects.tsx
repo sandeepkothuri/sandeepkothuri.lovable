@@ -9,41 +9,25 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 const Projects = () => {
   const projects = [
     {
-      title: 'Soluna Social',
-      description: 'Theoretical research paper proposing an ethical AI content moderation framework for creating safer online communities.',
-      longDescription: 'Authored a comprehensive research paper proposing a novel approach to ethical AI content moderation. The theoretical framework combines natural language processing and computer vision techniques while maintaining user privacy and ethical standards. The paper outlines methodologies for real-time monitoring, customizable filtering systems, and detailed analytics dashboards, providing a roadmap for future implementation of safer online community platforms.',
-      tools: ['Research', 'AI Ethics', 'NLP Theory', 'Computer Vision', 'Academic Writing'],
+      title: 'Digital App Usage & CO₂ Emissions Pipeline',
+      description: 'Simulated 100K+ app usage records; calculated per-session CO₂ emissions; built dashboards for sustainability KPIs.',
+      longDescription: 'Simulated 100K+ app usage records and calculated per-session CO₂ emissions using open benchmarks and Python-based processing. Developed Power BI dashboards to visualize usage intensity and sustainability KPIs by region, device, and category. Documented data lineage and metric definitions to improve transparency and align with stakeholder sustainability goals.',
+      tools: ['Python', 'SQL', 'Power BI', 'Tableau', 'Excel'],
       image: '/placeholder-project1.jpg',
-      category: 'Research'
-    },
-    {
-      title: 'Medi Match',
-      description: 'Workflow optimization solution for healthcare applications, streamlining patient management and resource allocation.',
-      longDescription: 'Created a comprehensive healthcare workflow management system that optimizes patient scheduling, resource allocation, and staff coordination. The platform features predictive analytics for demand forecasting and intelligent matching algorithms for optimal care delivery.',
-      tools: ['Python', 'SQL', 'Tableau', 'Django', 'Bootstrap'],
-      image: '/placeholder-project2.jpg',
-      category: 'Healthcare'
-    },
-    {
-      title: 'YouTube Monetization Study',
-      description: 'Comprehensive regression analysis investigating factors that contribute to high-earning YouTube channels.',
-      longDescription: 'Conducted an extensive data analysis project examining over 10,000 YouTube channels to identify key factors that drive monetization success. Used advanced statistical methods and machine learning to uncover insights about content strategy, audience engagement, and revenue optimization.',
-      tools: ['Python', 'Pandas', 'Scikit-learn', 'Matplotlib', 'Jupyter'],
-      image: '/placeholder-project3.jpg',
       category: 'Data Analysis'
     },
     {
-      title: 'Tiny Thinkers',
-      description: 'Educational game UI/UX design focused on making math learning engaging and accessible for young children.',
-      longDescription: 'Designed and prototyped an interactive educational platform that gamifies math learning for children aged 5-10. The project involved extensive user research, child psychology considerations, and iterative design testing to create an engaging and effective learning experience.',
-      tools: ['Figma', 'Adobe XD', 'Prototyping', 'User Research'],
-      image: '/placeholder-project4.jpg',
-      category: 'UI/UX Design'
+      title: 'OTT User Data Platform with AWS',
+      description: 'Analyzed millions of OTT logs via Athena; QuickSight dashboards for DAU, retention, and content trends.',
+      longDescription: 'Queried and analyzed millions of OTT session logs via Athena to uncover behavior patterns; found 65% of users preferred weekends, with action/drama genres driving peak engagement. Built QuickSight dashboards to track DAU, retention, and content trends, reducing manual reporting by 30% and enabling self-serve insights. Defined metadata tags and business logic for content types and session metrics, standardizing analytics across teams.',
+      tools: ['AWS S3', 'AWS Athena', 'Amazon QuickSight', 'SQL'],
+      image: '/placeholder-project2.jpg',
+      category: 'Data Analysis'
     }
   ];
 
   const [selectedCategory, setSelectedCategory] = useState('All');
-  const categories = ['All', 'Research', 'Healthcare', 'Data Analysis', 'UI/UX Design'];
+  const categories = ['All', 'Data Analysis'];
 
   const filteredProjects = selectedCategory === 'All' 
     ? projects 

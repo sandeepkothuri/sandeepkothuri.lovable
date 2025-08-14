@@ -27,16 +27,13 @@ const About = () => {
               </h3>
               <div className="space-y-4 text-lg text-foreground/80 leading-relaxed">
                 <p>
-                  I'm Sandeep Kothuri, a recent graduate in Information Systems from California State University, Long Beach. 
-                  I specialize in transforming complex data into actionable insights and creating intuitive digital experiences.
+                  Detail-oriented Data Analyst with 2 years of experience leveraging SQL, Python, and AWS to design scalable data solutions and enable self-service analytics.
                 </p>
                 <p>
-                  My expertise spans across SQL, Python, Tableau, and UI/UX design, with a strong focus on storytelling through data. 
-                  I believe that effective data analysis goes beyond numbers—it's about crafting narratives that drive meaningful business decisions.
+                  Proven ability to build end-to-end dashboards, ensure data quality, and extract insights from complex datasets using Tableau, Power BI, and Amazon QuickSight.
                 </p>
                 <p>
-                  With experience in both technical analysis and creative design, I bring a unique perspective to every project, 
-                  ensuring that data insights are not only accurate but also accessible and actionable.
+                  Master's candidate in Information Systems (CSULB, May 2025), specializing in data visualization, cloud platforms, and business intelligence.
                 </p>
               </div>
 
@@ -46,19 +43,19 @@ const About = () => {
                 <div className="grid grid-cols-2 gap-3 text-sm">
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span>Data Analysis</span>
+                    <span>Self-service Analytics</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span>Dashboard Design</span>
+                    <span>Data Pipelines (SQL/Python/dbt)</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span>UI/UX Design</span>
+                    <span>Cloud Platforms (AWS/Azure/Snowflake)</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span>Data Visualization</span>
+                    <span>GTM Funnels & Retention</span>
                   </div>
                 </div>
               </div>
@@ -91,7 +88,7 @@ const About = () => {
                           </span>
                         </div>
                         <p className="text-foreground/70 text-sm">
-                          Specialized in data analytics, database management, and systems design with focus on business intelligence.
+                          Coursework: Database Systems, Software System Design & Implementation, Data Structures & Algorithms, Big Data Analytics, Visual Analytics.
                         </p>
                       </div>
                     </div>
@@ -110,14 +107,14 @@ const About = () => {
                       </div>
                       <div className="flex-1">
                         <h4 className="text-xl font-semibold mb-2">B.Tech in Computer Science</h4>
-                        <p className="text-primary font-medium mb-2">SRM University AP</p>
+                        <p className="text-primary font-medium mb-2">SRM University, India</p>
                         <div className="flex items-center space-x-4 text-sm text-foreground/60 mb-3">
                           <div className="flex items-center space-x-1">
                             <Calendar className="h-4 w-4" />
-                            <span>September 2023</span>
+                            <span>May 2023</span>
                           </div>
                           <span className="px-2 py-1 bg-primary/20 text-primary rounded-full text-xs">
-                            GPA: 3.16
+                            GPA: 3.4
                           </span>
                         </div>
                         <p className="text-foreground/70 text-sm">
