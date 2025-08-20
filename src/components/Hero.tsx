@@ -160,7 +160,7 @@ const Hero = () => {
                 { number: "2+", label: "Years Experience", icon: "🎯" },
                 { number: "10+", label: "Dashboards Built", icon: "📊" },
                 { number: "3.6", label: "GPA Master's", icon: "🎓" },
-                { number: "4+", label: "Analytics Tools: Python, SQL, Tableau, Power BI", icon: "🛠️" }
+                { number: "Expert", label: "Python, SQL, Tableau, Power BI", icon: "🛠️" }
               ].map((stat, index) => (
                 <div 
                   key={stat.label}
