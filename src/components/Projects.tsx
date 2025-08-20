@@ -123,7 +123,7 @@ const Projects = () => {
                   <div className="p-6">
                     <div className="flex items-center justify-between mb-2">
                       <h3 className="text-xl font-semibold">{project.title}</h3>
-                      <Badge variant="outline" className="text-primary border-primary/40">
+                      <Badge variant="outline" className="text-primary border-primary/40 flex-shrink-0 whitespace-nowrap">
                         {project.category}
                       </Badge>
                     </div>
