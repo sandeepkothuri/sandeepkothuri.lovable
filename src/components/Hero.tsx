@@ -31,7 +31,7 @@ const Hero = () => {
           <div className="text-left animate-fade-up">
             {/* Status Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8">
-              <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
               <span className="text-sm font-medium text-primary">Available for opportunities</span>
             </div>
 
