@@ -71,33 +71,33 @@ const Experience = () => {
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
                   <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="p-2 bg-primary/20 rounded-lg">
-                        <exp.icon className={`h-6 w-6 ${exp.color}`} />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-xl font-semibold mb-1">{exp.title}</h3>
-                        <p className="text-primary font-medium mb-2">{exp.organization}</p>
-                        <p className="text-sm text-foreground/60 mb-3">{exp.period}</p>
-                        
-                        <div className="space-y-3">
-                          <p className="text-foreground/70 text-sm italic leading-relaxed">
-                            {exp.context}
-                          </p>
-                          
-                          <p className="text-foreground/80 leading-relaxed">
-                            {exp.responsibilities}
-                          </p>
-                          
-                          <ul className="space-y-2">
-                            {exp.achievements.map((achievement, i) => (
-                              <li key={i} className="text-foreground/80 text-sm leading-relaxed flex items-start">
-                                <span className="text-primary mr-2 mt-1">•</span>
-                                <span>{achievement}</span>
-                              </li>
-                            ))}
-                          </ul>
+                    <div className="flex-1">
+                      <div className="flex items-center space-x-3 mb-1">
+                        <h3 className="text-xl font-semibold">{exp.title}</h3>
+                        <div className="p-2 bg-primary/20 rounded-lg">
+                          <exp.icon className={`h-5 w-5 ${exp.color}`} />
                         </div>
+                      </div>
+                      <p className="text-primary font-medium mb-2">{exp.organization}</p>
+                      <p className="text-sm text-foreground/60 mb-3">{exp.period}</p>
+                      
+                      <div className="space-y-3">
+                        <p className="text-foreground/70 text-sm italic leading-relaxed">
+                          {exp.context}
+                        </p>
+                        
+                        <p className="text-foreground/80 leading-relaxed">
+                          {exp.responsibilities}
+                        </p>
+                        
+                        <ul className="space-y-2">
+                          {exp.achievements.map((achievement, i) => (
+                            <li key={i} className="text-foreground/80 text-sm leading-relaxed flex items-start">
+                              <span className="text-primary mr-2 mt-1">•</span>
+                              <span>{achievement}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     </div>
                   </CardContent>
