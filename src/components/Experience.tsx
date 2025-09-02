@@ -9,7 +9,13 @@ const Experience = () => {
       title: 'Jr. Data Analyst (Intern/Contract)',
       organization: 'Studytap – Remote',
       period: 'Jul 2021 – Jun 2022',
-      description: 'Built Python scripts to clean ~200K usage logs into SQL tables; created initial Tableau dashboards; reduced analysis turnaround time by 50% and enabled self-service analytics.',
+      context: 'Studytap needed foundational analytics to evaluate student learning behavior and user acquisition across its growing edtech platform.',
+      responsibilities: 'Tasked with setting up basic tracking, cleaning raw data, and producing recurring insights to support product and content teams.',
+      achievements: [
+        'Built Python scripts to clean and aggregate ~200K product usage logs into structured SQL tables for querying and visualization.',
+        'Created initial Tableau dashboards for user funnel performance and content engagement across early adopters.',
+        'Reduced analysis turnaround time by 50% and established a self-service analytics culture that empowered business teams with data.'
+      ],
       icon: Wrench,
       color: 'text-blue-400'
     },
@@ -17,7 +23,13 @@ const Experience = () => {
       title: 'Frontend & Data Analyst',
       organization: 'Studytap – Remote',
       period: 'Jul 2022 – Jun 2023',
-      description: 'Automated insights for 500K+ product events; built Power BI/Tableau dashboards for activation, CAC, LTV; improved trial-to-subscription by 15% and reduced manual reporting by 40%.',
+      context: 'Studytap was scaling rapidly and needed robust GTM insights to optimize onboarding, trial conversion, and customer retention.',
+      responsibilities: 'Tasked with automating insights delivery and building reliable pipelines to analyze 500K+ raw product events.',
+      achievements: [
+        'Designed dynamic dashboards in Power BI and Tableau to track activation, CAC, LTV, and regional growth metrics.',
+        'Used SQL and Python to run behavioral cohort analyses and identify key drop-off points in the user journey.',
+        'Increased trial-to-subscription rate by 15%, reduced manual reporting by 40%, and enabled GTM teams to make data-informed campaign decisions.'
+      ],
       icon: Users,
       color: 'text-green-400'
     }
@@ -67,7 +79,25 @@ const Experience = () => {
                         <h3 className="text-xl font-semibold mb-1">{exp.title}</h3>
                         <p className="text-primary font-medium mb-2">{exp.organization}</p>
                         <p className="text-sm text-foreground/60 mb-3">{exp.period}</p>
-                        <p className="text-foreground/80 leading-relaxed">{exp.description}</p>
+                        
+                        <div className="space-y-3">
+                          <p className="text-foreground/70 text-sm italic leading-relaxed">
+                            {exp.context}
+                          </p>
+                          
+                          <p className="text-foreground/80 leading-relaxed">
+                            {exp.responsibilities}
+                          </p>
+                          
+                          <ul className="space-y-2">
+                            {exp.achievements.map((achievement, i) => (
+                              <li key={i} className="text-foreground/80 text-sm leading-relaxed flex items-start">
+                                <span className="text-primary mr-2 mt-1">•</span>
+                                <span>{achievement}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </CardContent>
